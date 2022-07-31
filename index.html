@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head>
-    <title>Clean &amp; Square free template - Home</title>
+    <title>CheetiCinema MOTD - Home</title>
     <meta charset="UTF-8">
     <meta name="generator" content="Silex v2.2.14">
 
@@ -59,7 +59,7 @@
 
     
     
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script class="silex-script"></script><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><script class="silex-script"></script><meta content="summary" property="twitter:card"><meta property="og:type" content="website"><meta property="twitter:title" content="CheetiCinema"><meta property="og:title" content="CheetiCinema"><meta property="twitter:description" content="The message of the day for CheetiCinema"><meta property="og:description" content="The message of the day for CheetiCinema"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
 
 <body class="body-initial all-style enable-mobile prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-home">
     
@@ -165,7 +165,7 @@
 
         <div class="editable-style silex-id-1552772425150-3 text-element silex-component prevent-resizable hamburger-menu prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1656287857496_130 closed">
+<div class="hamburger-menu_1659273928405_912 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -178,7 +178,7 @@
             
                 <li><a href="./" class="page-link-active">Home</a></li>
             
-                <li><a href="help.html" class="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             
                 <li><a href="https://www.silex.me/">Powered by Silex</a></li>
             
@@ -192,13 +192,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1656287857496_130').classList.remove('open');
-    document.querySelector('.hamburger-menu_1656287857496_130').classList.add('closed');
+    document.querySelector('.hamburger-menu_1659273928405_912').classList.remove('open');
+    document.querySelector('.hamburger-menu_1659273928405_912').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1656287857496_130').classList.add('open');
-    document.querySelector('.hamburger-menu_1656287857496_130').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1659273928405_912').classList.add('open');
+    document.querySelector('.hamburger-menu_1659273928405_912').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -208,7 +208,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1656287857496_130').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1659273928405_912').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -216,10 +216,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1656287857496_130 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1659273928405_912 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1656287857496_130 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1659273928405_912 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
